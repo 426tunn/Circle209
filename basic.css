@@ -1,23 +1,173 @@
+body{
+    background-color: rgb(243, 247, 245);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
 
-header{
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid blue;
-  
 }
-navbar{
-  border: 1px solid red;
-  width: 20%;
+section {
+    flex-direction: column;
 }
-nav{
-  display: flex;  
+
+.menu-container{
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: rgb(59, 10, 105);
+    background: url('background.jpeg') no-repeat center center/ cover;
 }
-table{
-  border: 1px solid orange;
+
+.menubar{
+    width: 70%;
+    height: 80%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: hsl(269, 29%, 76%);
+    opacity: 0.8;
 }
-th {
-  border: 1px solid green;
+
+.menubar img {
+    margin: 15px auto;
+    width: 35px;
+    height: 45px;
 }
-td {
-  border: 1px solid black;
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-top: 5px;
+    transition: .7s;
+    border-top: 2px solid rgb(224, 207, 207);
+    border-bottom: 2px solid rgb(218, 205, 205);
+    color: rgb(105, 15, 90);
+}
+
+.schoolstat{
+    display: flex;
+    width: 80%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin: 10px 10px;
+    margin-top: 0;
+    background-color: white;
+}
+
+.header * {
+    margin: 5px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+}
+
+.nav {
+    border-left: 4px solid rgb(255, 0, 234);
+    background-color: white;
+    border-radius: 5px;
+    height: 80px;
+    width: 20%;
+    margin: 6px;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h5{
+    font-size: bold;
+}
+
+p {
+    width: auto;
+    text-align: center;
+}
+
+.age{
+    height: 10px;
+    line-height: 1px;
+}
+
+.stat-table{
+    width: 99%;
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: auto;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+}
+
+button{
+    background: transparent;
+    border: none;
+}
+
+button:hover{
+    background-color: rgb(114, 20, 106);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+}
+
+.table-owner{
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+}
+
+table {
+    margin: 30px auto;
+    column-gap: 10px;
+}
+
+th{
+    border-bottom: 1px thin black;
+    margin-left: 20px;
+    width: 400px;
+}
+
+tr{
+    background-color: rgb(240, 233, 233);
+    border-bottom: 1px thin black;    
+}
+
+td, tr, th{
+    text-align: center;
+    border-collapse: collapse;
+}
+.hidden {
+    display: none;
+}
+.aboutSchool > .schname{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.aboutSchool > p{
+    border-bottom: 1px solid rgb(255, 0, 234);    
+    border-top: 1px solid rgb(255, 0, 234);
+    width: 500px;
+    line-height: 2.0rem;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(250, 255, 255) ;
 }

@@ -13,153 +13,112 @@
 </head>
 
 <body>
-     <div class="container"> 
-    <div class="header">
-        <h2>Welcome To SCHOLARS TECH. SCHOOL</h2>
-        <p>School Year: 2022/2023</p>
-    </div>     
-
-    <div class="side-bar">
-        <a href="#" class="logo">
-            <img src="/schlogo.png" class="logo-img">
-        </a>
-        <ul class="navLinks">
-            <!-- <li><a href="#"><i class="fa-solid fa-skull-crossbones"></i><p>Dashboard</p></a> </li> -->
-            <li><a href="#"><p>Students</p></a> </li>
-            <li><a href="#"><p><p>FrontEnd<br> Engineering</p></p></a> </li>
-            <li><a href="#"><p><p>Backend<br> Engineering</p></p></a> </li>
-            <li><a href="#"><p><p>Cloud<br> Engineering</p></p></a> </li>
-            <li><a href="#"><p>Instructors</p></a> </li>
-            <div class="active">
-                
-            </div>
-        </ul>
-    </div>
-
-       <div class="content">
-            <div class="cards">
-                <div class="card">
-                    <div class="box">
-                        <h5>FrontEnd<br> Engineering</h5>
-                    </div>
-                    <div class="stat">    
-                        <h3>200<br>Students</h3>
-                    </div>
-                    
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <h5>BackEnd<br> Engineering</h5>
-                    </div>
-                    <div class="stat">    
-                        <h3>200<br>Students</h3>
-                    </div>
-                   
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <h5>Cloud<br> Engineering</h5>
-                    </div>
-                    <div class="stat">    
-                        <h3>200<br>Students</h3>
-                    </div>
-                    
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <h5>Gender</h5>
-                    </div>    
-                    <div class="stat">
-                        <h3>Male: 311<br>Female: 289</h3>
-                    </div>
-                        
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <h5>Age:</h5>
-                    </div>   
-                    <div class="stat">
-                        <h3>Min: 16<br>Max: 37<br>Avg: 23</h3>
-                    </div>
-                    
+    <section class="menu-container">
+        <div class="menubar">
+            <img class="menu" src="schlogo.png">
+            <button class="menu frontend" onclick="myFunction('FEtable',FrontEndStudents, 'FrontEnd Engineering')">
+                FrontEnd
+            </button>
+            <button class="menu backend" onclick="myFunction('BEtable',BackEndStudents, 'BackEnd Engineering')">
+                BackEnd
+            </button>
+            <button class="menu cloud" onclick="myFunction('CEtable',CloudStudents, 'Cloud Engineering')">
+                Cloud
+            </button>
+            <button class="menu instructors" onclick="myFunction('instructors-table',Instructors, 'Instructors')">
+                Instructors
+            </button>
+        </div>
+    </section>
+    
+    <section class="schoolstat">
+        <div class="header">
+            <h4 class="schname">Scholars' Academy</h4>
+            <h4 class="schyear">School Year: 2022/2023</h4>
+        </div>
+        
+        <div class="navbar">
+            <div class="nav">
+                <h5>FrontEnd Engineering</h5>
+                <div>
+                    <p class="data">200 Students</p>
                 </div>
             </div>
-
-       <div class="content2">
-             <div class="studentTab" >
-                <div class="title">
-                    <h2> Backend Engineering Students</h2>
-                    <a href="#">View All</a>
+            <div class="nav">
+                <h5>BackEnd Engineering</h5>
+                <div>
+                    <p class="data">200 Students</p>
                 </div>
-                <table>
+            </div>
+            <div class="nav">
+                <h5>Cloud Engineering</h5>
+                <div>
+                    <p class="data">200 Students</p>
+                </div>
+            </div>
+            <div class="nav">
+                <h5 class="data">Gender</h5>
+                <div>
+                    <p class="data">Female: 34</p>
+                    <p class="data">Male: 34</p>
+                </div>
+            
+            </div>
+            <div class="nav">
+                <h5>Age</h5>
+                <div>
+                    <p class="data age">Min: 16</p>
+                    <p class="data age">Max: 16</p>
+                    <p class="data age">Avg: 16</p>
+                </div>
+            </div>
+        </div>
+        <div class="stat-table">
+            <div class="aboutSchool">
+                <div class="schname">Scholars' Academy</div>
+                <p>Scholars' Academy offers the best programming
+                    experiences for students. We embrace a pragmatic approach torwards learning, 
+                    and engage students with real-life challenges to solidify their knowledge.
+                    We provide hundreds of internship opportunities to our students from 
+                    partnering companies.<br>
+                    Many of our students have had their internships in FAANG companies
+                    and 95% of our graduates secure jobs within two years of graduation 
+                    with with an average annual salary of $108,000.
+                </p>
+            </div>
+            <div class="infos hidden">
+                <table id="FEtable" class="hidden">
+                    <div class="table-owner"></div>
                     <tr>
-                        <th>Names</th>
-                        <th>Gender</th>
-                        <th>Tracks</th>
+                        <th>Name</th>
+                        <th>Name</th>
                     </tr>
+                </table>
+                <table id="BEtable" class="hidden">
                     <tr>
-                        <td>Akanni Agbolahan</td>
-                        <td>Male</td>
-                        <td>Backend Engineering</td>
+                        <th>Name</th>
+                        <th>Name</th>
                     </tr>
+                </table>
+                <table id="CEtable" class="hidden">
                     <tr>
-                        <td>Akanni Agbolahan</td>
-                        <td>Male</td>
-                        <td>Backend Engineering</td>
+                        <th>Name</th>
+                        <th>Name</th>
                     </tr>
+                </table>
+                <table id="instructors-table" class="hidden">
                     <tr>
-                        <td>Akanni Agbolahan</td>
-                        <td>Male</td>
-                        <td>Backend Engineering</td>
+                        <th>Name</th>
+                        <th>Name</th>
                     </tr>
-                    <tr>
-                        <td>Akanni Agbolahan</td>
-                        <td>Male</td>
-                        <td>Backend Engineering</td>
-                    </tr>
-                    <tr>
-                        <td>Akanni Agbolahan</td>
-                        <td>Male</td>
-                        <td>Backend Engineering</td>
-                    </tr>
-                    <tr>
-                        <td>Akanni Agbolahan</td>
-                        <td>Male</td>
-                        <td>Backend Engineering</td>
-                    </tr>
-                    <tr>
-                        <td>Akanni Agbolahan</td>
-                        <td>Male</td>
-                        <td>Backend Engineering</td>
-                    </tr>
-                    <tr>
-                        <td>Akanni Agbolahan</td>
-                        <td>Male</td>
-                        <td>Backend Engineering</td>
-                    </tr>
-                </table>  
-                
-                <script>
+                </table>
+            </div>
+        </div>
 
-                    var student = document.getElementById("FrontE");
-                    function closeStudent (){
-                        student.style.top = "-100vh"
-
-                    }
-
-                    function closeStudent (){
-                        FrontEnd.style.top = "100vh"
-
-                    }
-
-                </script>
-
-
-
-
-          <!-- // ============= EEND DO NOT EDIT ============== // -->
-          <script src="index.mjs" type="module"></script>
-          <!-- // ============= EEND DO NOT EDIT ============== // -->
+    </section>
+    <!-- // ============= EEND DO NOT EDIT ============== // -->
+        <script src="index.js"></script>
+    <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
 
 </html>
