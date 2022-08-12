@@ -1,7 +1,7 @@
 # AltSchool Semester 1 Holiday Challenge
 
 ### What
-Solidify what you’ve learnt by building cool simple things you can showcase
+Solidify what you have  learnt by building cool simple things you can showcase
 
 ### Why
 Practice makes perfect. We’re getting you ready for all the fun projects in the coming semester
