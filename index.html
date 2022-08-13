@@ -1,124 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SchoolStat</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SchoolStat</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="basic.css" />
+  </head>
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="basic.css">
-</head>
-
-<body>
+  <body>
     <section class="menu-container">
-        <div class="menubar">
-            <img class="menu" src="schlogo.png">
-            <button class="menu frontend" onclick="myFunction('FEtable',FrontEndStudents, 'FrontEnd Engineering')">
-                FrontEnd
-            </button>
-            <button class="menu backend" onclick="myFunction('BEtable',BackEndStudents, 'BackEnd Engineering')">
-                BackEnd
-            </button>
-            <button class="menu cloud" onclick="myFunction('CEtable',CloudStudents, 'Cloud Engineering')">
-                Cloud
-            </button>
-            <button class="menu instructors" onclick="myFunction('instructors-table',Instructors, 'Instructors')">
-                Instructors
-            </button>
-        </div>
+      <div class="menubar">
+        <img class="menu" src="schlogo.png" />
+        <button
+          class="menu frontend"
+          onclick="myFunction('FEtable',FrontEndStudents, 'FrontEnd Engineering')"
+        >
+          FrontEnd
+        </button>
+        <button
+          class="menu backend"
+          onclick="myFunction('BEtable',BackEndStudents, 'BackEnd Engineering')"
+        >
+          BackEnd
+        </button>
+        <button
+          class="menu cloud"
+          onclick="myFunction('CEtable',CloudStudents, 'Cloud Engineering')"
+        >
+          Cloud
+        </button>
+        <button
+          class="menu instructors"
+          onclick="myFunction('instructors-table',Instructors, 'Instructors')"
+        >
+          Instructors
+        </button>
+      </div>
     </section>
-    
+
     <section class="schoolstat">
-        <div class="header">
-            <h4 class="schname">Scholars' Academy</h4>
-            <h4 class="schyear">School Year: 2022/2023</h4>
-        </div>
-        
-        <div class="navbar">
-            <div class="nav">
-                <h5>FrontEnd Engineering</h5>
-                <div>
-                    <p class="data">200 Students</p>
-                </div>
-            </div>
-            <div class="nav">
-                <h5>BackEnd Engineering</h5>
-                <div>
-                    <p class="data">201 Students</p>
-                </div>
-            </div>
-            <div class="nav">
-                <h5>Cloud Engineering</h5>
-                <div>
-                    <p class="data">200 Students</p>
-                </div>
-            </div>
-            <div class="nav">
-                <h5 class="data">Gender</h5>
-                <div>
-                    <p class="data">Female: 34</p>
-                    <p class="data">Male: 34</p>
-                </div>
-            
-            </div>
-            <div class="nav">
-                <h5>Age</h5>
-                <div>
-                    <p class="data age">Min: 16</p>
-                    <p class="data age">Max: 16</p>
-                    <p class="data age">Avg: 16</p>
-                </div>
-            </div>
-        </div>
-        <div class="stat-table">
-            <div class="aboutSchool">
-                <div class="schname">Scholars' Academy</div>
-                <p>Scholars' Academy offers the best programming
-                    experiences for students. We embrace a pragmatic approach torwards learning, 
-                    and engage students with real-life challenges to solidify their knowledge.
-                    We provide hundreds of internship opportunities to our students from 
-                    partnering companies.<br>
-                    Many of our students have had their internships in FAANG companies
-                    and 95% of our graduates secure jobs within two years of graduation 
-                    with with an average annual salary of $108,000.
-                </p>
-            </div>
-            <div class="infos hidden">
-                <table id="FEtable" class="hidden">
-                    <div class="table-owner"></div>
-                    <tr>
-                        <th>Name</th>
-                        <th>Name</th>
-                    </tr>
-                </table>
-                <table id="BEtable" class="hidden">
-                    <tr>
-                        <th>Name</th>
-                        <th>Name</th>
-                    </tr>
-                </table>
-                <table id="CEtable" class="hidden">
-                    <tr>
-                        <th>Name</th>
-                        <th>Name</th>
-                    </tr>
-                </table>
-                <table id="instructors-table" class="hidden">
-                    <tr>
-                        <th>Name</th>
-                        <th>Name</th>
-                    </tr>
-                </table>
-            </div>
-        </div>
+      <div class="header">
+        <h4 class="schname">Scholars' Academy</h4>
+        <h4 class="schyear">School Year: 2022/2023</h4>
+      </div>
 
+      <div class="navbar">
+        <div class="nav">
+          <h5>FrontEnd Engineering</h5>
+          <div>
+            <p class="data">200 Students</p>
+          </div>
+        </div>
+        <div class="nav">
+          <h5>BackEnd Engineering</h5>
+          <div>
+            <p class="data">201 Students</p>
+          </div>
+        </div>
+        <div class="nav">
+          <h5>Cloud Engineering</h5>
+          <div>
+            <p class="data">200 Students</p>
+          </div>
+        </div>
+        <div class="nav">
+          <h5 class="data">Gender</h5>
+          <div>
+            <p class="data">Female: 34</p>
+            <p class="data">Male: 34</p>
+          </div>
+        </div>
+        <div class="nav">
+          <h5>Age</h5>
+          <div>
+            <p class="data age">Min: 16</p>
+            <p class="data age">Max: 16</p>
+            <p class="data age">Avg: 16</p>
+          </div>
+        </div>
+      </div>
+      <div class="stat-table">
+        <div class="aboutSchool">
+          <div class="schname">Scholars' Academy</div>
+          <p>
+            Scholars' Academy offers the best programming experiences for
+            students. We embrace a pragmatic approach torwards learning, and
+            engage students with real-life challenges to solidify their
+            knowledge. We provide hundreds of internship opportunities to our
+            students from partnering companies.<br />
+            Many of our students have had their internships in FAANG companies
+            and 95% of our graduates secure jobs within two years of graduation
+            with with an average annual salary of $108,000.
+          </p>
+        </div>
+        <div class="infos hidden">
+          <table id="FEtable" class="hidden">
+            <div class="table-owner"></div>
+            <tr>
+              <th>Name</th>
+              <th>Name</th>
+            </tr>
+          </table>
+          <table id="BEtable" class="hidden">
+            <tr>
+              <th>Name</th>
+              <th>Name</th>
+            </tr>
+          </table>
+          <table id="CEtable" class="hidden">
+            <tr>
+              <th>Name</th>
+              <th>Name</th>
+            </tr>
+          </table>
+          <table id="instructors-table" class="hidden">
+            <tr>
+              <th>Name</th>
+              <th>Name</th>
+            </tr>
+          </table>
+        </div>
+      </div>
     </section>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
-        <script src="index.mjs"></script>
+    <script src="index.mjs"></script>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
-</body>
-
+  </body>
 </html>
